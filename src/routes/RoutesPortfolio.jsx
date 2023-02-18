@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import About from '../components/About/About'
-import Index from '../components/Index/Index'
+import About from '../pages/About/About'
+import Contact from '../pages/Contact/Contact'
+import Index from '../pages/Index/Index'
+import Proyects from '../pages/Proyects/Proyects'
 
 const RoutesPortfolio = () => {
   return (
@@ -8,6 +10,8 @@ const RoutesPortfolio = () => {
         <Routes>
             <Route path='/' element={<Index />} />
             <Route path='/sobre mí' element={<About />} />
+            <Route path='/proyectos' element={<Proyects />} />
+            <Route path='/contacto' element={<Contact />} />
         </Routes>
     </>
   )
