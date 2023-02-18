@@ -1,11 +1,12 @@
 import './App.css'
+import RoutesPortfolio from './routes/RoutesPortfolio'
 
 function App() {
 
   return (
-    <div className="App">
-      <button>ad</button>
-    </div>
+    <>
+      <RoutesPortfolio />
+    </>
   )
 }
 
