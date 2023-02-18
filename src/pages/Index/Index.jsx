@@ -27,7 +27,7 @@ const Index = () => {
               onMouseEnter={() => handleText('Sobre Mí', '', '')}
               className={` font-extrabold sm:text-8xl text-gray-50 delay-75 ${
                 transition
-                  ? "hover:translate-x-9 duration-150 delay-75 ease-linear cursor-pointer"
+                  ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
               onMouseLeave={() => handleText('Hola', '', '')}
@@ -40,7 +40,7 @@ const Index = () => {
               onMouseEnter={() => handleText('', 'Proyectos', '')}
               className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
                 transition
-                  ? "hover:translate-x-9 duration-150 delay-75 ease-linear cursor-pointer"
+                  ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
               onMouseLeave={() => handleText('', 'Soy', '')}
@@ -53,7 +53,7 @@ const Index = () => {
               onMouseEnter={() => handleText('', '', 'Contacto')}
               className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
                 transition
-                  ? "hover:translate-x-9 duration-150 delay-75 ease-linear cursor-pointer"
+                  ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
               onMouseLeave={() => handleText('', '', 'Santiago')}
