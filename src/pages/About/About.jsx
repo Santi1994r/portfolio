@@ -10,11 +10,11 @@ const About = () => {
         <div className="flex justify-end">
           <BtnGoBack />
         </div>
-        <div className="flex flex-col items-center justify-center mt-44">
-          <h1 className=" text-white text-center text-8xl">
+        <div className="flex flex-col items-center justify-center mt-32 sm:mt-44">
+          <h1 className=" text-white text-center text-4xl sm:text-8xl">
             Soy desarrollador Front End{" "}
           </h1>
-          <h2 className=" text-white text-center text-8xl">
+          <h2 className=" text-white text-center text-4xl sm:text-8xl">
             Futuro Full stack{" "}
           </h2>
         </div>
@@ -24,10 +24,10 @@ const About = () => {
       </section>
 
       <section className='flex flex-col items-center'>
-        <h3 className=' text-white text-center mt-32 mb-10 text-5xl font-bold w-8/12'>
+        <h3 className=' text-white text-center mt-32 mb-10 text-5xl sm:text-5xl font-bold w-8/12'>
           Sobre mí
         </h3>
-        <p className="text-white text-2xl text-center w-8/12">
+        <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
           Hi, I’m Dejan. I'm a multi-talented human with over 10+ years of
           experiences in wide range of design disciplines. You can also call me
           a product designer, experience designer, interaction, UI, UX or by any

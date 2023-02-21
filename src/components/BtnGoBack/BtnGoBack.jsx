@@ -13,7 +13,7 @@ const BtnGoBack = () => {
       <h3
         onMouseEnter={handleBtn}
         onMouseLeave={handleBtn}
-        className=" text-white hover:cursor-pointer font-bold text-2xl m-10 hover:-translate-x-5 transition-all"
+        className=" text-white hover:cursor-pointer font-bold text-2xl sm:text-3xl m-10 hover:-translate-x-5 transition-all"
       >
         {btnGoBack ? "Santiago Ruiz" : "Santiago"}
       </h3>

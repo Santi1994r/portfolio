@@ -10,23 +10,25 @@ const Index = () => {
   const handleText = (index) => {
     setTransition(true)
     index === 1 ? setHello(!hello) : index === 2 ? setIAm(!iAm) : index === 3 && setSantiago(!Santiago)
-    /* textHi ? setHello(textHi) : setHello('Hola')
-    textIam ? setIAm(textIam) : setIAm('Soy')
-    textSantiago ? setSantiago(textSantiago) : setSantiago('Santiago') */
   }
-/* pruevba   */
+  const handleTextMobile = () => {
+    setTransition(true)
+    setHello(!hello)
+    setIAm(!iAm)
+    setSantiago(!Santiago)
+  }
   return (  
-    <section className="relative bg-[url(https://i.imgur.com/AgmtPpT.jpg)] bg-cover bg-center bg-no-repeat">
+    <section onClick={handleTextMobile} className="relative bg-[url(https://i.imgur.com/FXSNxqU.jpg)] bg-cover bg-center bg-no-repeat">
       {
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
       }
 
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+      <div className="relative flex flex-col items-start justify-between sm:justify-center pt-2 pb-10  h-screen mx-auto max-w-screen-xl px-4 py-32 sm:px-6  lg:h-screen lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
           <Link to={"/sobre mí"}>
             <h1
               onMouseEnter={() => handleText(1)}
-              className={` font-extrabold sm:text-8xl text-gray-50 delay-75 ${
+              className={` font-extrabold text-4xl sm:text-8xl text-gray-50 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -39,7 +41,7 @@ const Index = () => {
           <Link to={"/proyectos"}>
             <h1
               onMouseEnter={() => handleText(2)}
-              className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -52,7 +54,7 @@ const Index = () => {
           <Link to={"/contacto"}>
             <h1
               onMouseEnter={() => handleText(3)}
-              className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -78,6 +80,11 @@ const Index = () => {
             </a>
           </div> */}
         </div>
+
+        <div className='flex self-center sm:hidden'>
+          <p className=' text-white'>Toca en cualquier lado</p>
+        </div>
+
       </div>
     </section>
   );
