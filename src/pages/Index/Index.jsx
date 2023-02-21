@@ -2,18 +2,19 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Index = () => {
-  const [hello, setHello] = useState('Hola')
-  const [iAm, setIAm] = useState('Soy')
-  const [Santiago, setSantiago] = useState('Santiago')
+  const [hello, setHello] = useState(false)
+  const [iAm, setIAm] = useState(false)
+  const [Santiago, setSantiago] = useState(false)
   const [transition, setTransition] = useState(false)
 
-  const handleText = (textHi, textIam, textSantiago) => {
+  const handleText = (index) => {
     setTransition(true)
-    textHi ? setHello(textHi) : setHello('Hola')
+    index === 1 ? setHello(!hello) : index === 2 ? setIAm(!iAm) : index === 3 && setSantiago(!Santiago)
+    /* textHi ? setHello(textHi) : setHello('Hola')
     textIam ? setIAm(textIam) : setIAm('Soy')
-    textSantiago ? setSantiago(textSantiago) : setSantiago('Santiago')
+    textSantiago ? setSantiago(textSantiago) : setSantiago('Santiago') */
   }
-
+/* pruevba   */
   return (  
     <section className="relative bg-[url(https://i.imgur.com/AgmtPpT.jpg)] bg-cover bg-center bg-no-repeat">
       {
@@ -24,41 +25,41 @@ const Index = () => {
         <div className="max-w-xl text-center sm:text-left">
           <Link to={"/sobre mí"}>
             <h1
-              onMouseEnter={() => handleText('Sobre Mí', '', '')}
+              onMouseEnter={() => handleText(1)}
               className={` font-extrabold sm:text-8xl text-gray-50 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
-              onMouseLeave={() => handleText('Hola', '', '')}
+              onMouseLeave={() => handleText(1)}
             >
-              {hello}
+              {hello ? "Sobre mí" : "Hola"}
             </h1>
           </Link>
           <Link to={"/proyectos"}>
             <h1
-              onMouseEnter={() => handleText('', 'Proyectos', '')}
+              onMouseEnter={() => handleText(2)}
               className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
-              onMouseLeave={() => handleText('', 'Soy', '')}
+              onMouseLeave={() => handleText(2)}
             >
-              {iAm}
+              {iAm ? "Proyectos" : "Soy"}
             </h1>
           </Link>    
           <Link to={"/contacto"}>
             <h1
-              onMouseEnter={() => handleText('', '', 'Contacto')}
+              onMouseEnter={() => handleText(3)}
               className={` font-extrabold sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
               }`}
-              onMouseLeave={() => handleText('', '', 'Santiago')}
+              onMouseLeave={() => handleText(3)}
             >
-              {Santiago}
+              {Santiago ? "Contacto" : "Santiago"}
             </h1>
           </Link>     
          {/*  <div className="mt-8 flex flex-wrap gap-4 text-center">
