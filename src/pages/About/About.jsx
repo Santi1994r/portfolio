@@ -14,9 +14,6 @@ const About = () => {
           <h1 className=" text-white text-center text-4xl sm:text-8xl">
             Soy desarrollador Front End{" "}
           </h1>
-          <h2 className=" text-white text-center text-4xl sm:text-8xl">
-            Futuro Full stack{" "}
-          </h2>
         </div>
       </section>
       <section>

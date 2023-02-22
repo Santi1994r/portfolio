@@ -2,22 +2,72 @@ import React from 'react'
 import IconSkill from './IconSkill'
 
 const Skills = () => {
+  const propsIcons = [
+    {
+      urlIcon: 'https://i.imgur.com/F9Up8KU.png',
+      nameAlt: 'html',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/1lPbeVN.png',
+      nameAlt: 'css',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/yEmOWLP.png',
+      nameAlt: 'javascript',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/4mSWRCz.png',
+      nameAlt: 'react js',
+      widthLogo: 'w-36'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/X5VoozL.png',
+      nameAlt: 'python',
+      widthLogo: 'w-28'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/eMRUOLh.png',
+      nameAlt: 'sass',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/vucmtIm.png',
+      nameAlt: 'bootstrap',
+      widthLogo: 'w-36'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/DA7OuWH.png',
+      nameAlt: 'formik',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/PRtDO7N.png',
+      nameAlt: 'git',
+      widthLogo: 'w-28'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/ztjyaIn.png',
+      nameAlt: 'vite js',
+      widthLogo: 'w-32'
+    },
+    {
+      urlIcon: 'https://i.imgur.com/FuPrLd7.png',
+      nameAlt: 'github',
+      widthLogo: 'w-32'
+    }
+  ]
   return (
     <section className='flex flex-col items-center pb-10'>
         <h5 className=' text-white text-center mt-28 mb-5 text-4xl font-bold'>Habilidades</h5>
 
-        <div className=' bg-indigo-900 w-8/12 flex justify-center rounded-xl p-8 flex-wrap'>
-            <IconSkill logoURL={'https://i.imgur.com/F9Up8KU.png'} nameLogo={'html'} widthLogo={'w-32'} />
-            <IconSkill logoURL={'https://i.imgur.com/1lPbeVN.png'} nameLogo={'css'} widthLogo={'w-32'} />
-            <IconSkill logoURL={'https://i.imgur.com/yEmOWLP.png'} nameLogo={'javaScript'} widthLogo={'w-32'} />
-            <IconSkill logoURL={'https://i.imgur.com/4mSWRCz.png'} nameLogo={'react js'} widthLogo={'w-36'} />
-            <IconSkill logoURL={'https://i.imgur.com/X5VoozL.png'} nameLogo={'python'} widthLogo={'w-28'} />
-            <IconSkill logoURL={'https://i.imgur.com/eMRUOLh.png'} nameLogo={'sass'} widthLogo={'w-32'} />
-            <IconSkill logoURL={'https://i.imgur.com/mS8701n.png'} nameLogo={'bootstrap'} widthLogo={'w-44'} />
-            <IconSkill logoURL={'https://i.imgur.com/DA7OuWH.png'} nameLogo={'formik'} widthLogo={'w-28'} />
-            <IconSkill logoURL={'https://i.imgur.com/PRtDO7N.png'} nameLogo={'git'} widthLogo={'w-24'} heigthLogo={'h-40'} />
-            <IconSkill logoURL={'https://i.imgur.com/ztjyaIn.png'} nameLogo={'vite js'} widthLogo={'w-32'} />
-            <IconSkill logoURL={'https://i.imgur.com/FuPrLd7.png'} nameLogo={'github'} widthLogo={'w-32'} />
+        <div className=' bg-indigo-900 w-auto h-44 sm:h-full sm:w-8/12 overflow-x-auto overscroll-x-contain flex p-5 items-center justify-center rounded-xl sm:overflow-hidden sm:flex-wrap'>
+
+          {
+            propsIcons.map((iconProp, index) => <IconSkill key={index} logoURL={iconProp.urlIcon} nameLogo={iconProp.nameAlt} widthLogo={iconProp.widthLogo} />)
+          }
 
         </div>
     </section>

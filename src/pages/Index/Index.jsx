@@ -18,12 +18,16 @@ const Index = () => {
     setSantiago(!Santiago)
   }
   return (  
-    <section onClick={handleTextMobile} className="relative bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat">
+    <section onClick={handleTextMobile} className="relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] sm:bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat">
       {
         <div className="absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
       }
-
+      
+        
       <div className="relative flex flex-col items-start justify-between sm:justify-center pt-2 pb-10  h-screen mx-auto max-w-screen-xl px-4 py-32 sm:px-6  lg:h-screen lg:px-8">
+      <div className='flex self-center sm:hidden'>
+          <p className=' text-black'>Toca en cualquier lado</p>
+      </div>
         <div className="max-w-xl text-center sm:text-left">
           <Link to={"/sobre mí"}>
             <h1
@@ -81,9 +85,7 @@ const Index = () => {
           </div> */}
         </div>
 
-        <div className='flex self-center sm:hidden'>
-          <p className=' text-white'>Toca en cualquier lado</p>
-        </div>
+        
 
       </div>
     </section>
