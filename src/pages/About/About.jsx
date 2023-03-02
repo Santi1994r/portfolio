@@ -5,7 +5,7 @@ import Training from "../../components/Training.jsx/Training";
 
 const About = () => {
   return (
-    <div className=" h-full bg-black ">
+    <div id='About' className=" h-full bg-black ">
       <section className=" h-h-9-screen">
         <div className="flex justify-end">
           <BtnGoBack />
