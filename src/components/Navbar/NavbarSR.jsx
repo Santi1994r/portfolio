@@ -8,7 +8,7 @@ const NavbarSR = () => {
 
   return (
     <header aria-label="Site Header" className="bg-indigo-900">
-      <div className="mx-auto flex h-auto max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-auto max-w-screen-xl items-center gap-8 p-3 sm:px-6 lg:px-8">
          {/*  <span className="sr-only">Home</span> */}
           <img className="w-20 rounded-3xl" src="https://i.imgur.com/vKTfk5I.jpg" alt="santiago ruiz" />
 
@@ -23,37 +23,37 @@ const NavbarSR = () => {
                 >
                   Sobre mí
                 </a> */}
-                <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
+                <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
                     Sobre mí
                 </Link>
               </li>
 
               <li>
-              <Link to="Proyects" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
+              <Link to="Proyects" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
                     Proyectos
                 </Link>
               </li>
 
               <li>
-              <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
-                    Sobre mí
+              <Link to="Skills" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
+                    Habilidades
                 </Link>
               </li>
 
               <li>
-              <Link to="Contact" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
+              <Link to="Contact" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
                     Contacto
                 </Link>
               </li>
 
               <li>
-              <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
+              <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
                     Sobre mí
                 </Link>
               </li>
 
               <li>
-              <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer'>
+              <Link to="About" smooth={true} className='text-gray-500 transition hover:text-white cursor-pointer text-xl'>
                     Sobre mí
                 </Link>
               </li>

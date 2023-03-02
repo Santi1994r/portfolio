@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <NavbarSR />
-      <ToggleMain />
+      {/* <ToggleMain /> */}
       <Index />
       <About />
       <Proyects />
