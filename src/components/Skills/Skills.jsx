@@ -63,10 +63,10 @@ const Skills = () => {
     <section className='flex flex-col items-center pb-10'>
         <h5 className=' text-white text-center mt-28 mb-5 text-4xl font-bold'>Habilidades</h5>
 
-        <div className=' bg-indigo-900 w-auto h-44 sm:h-full sm:w-8/12 overflow-x-auto overscroll-x-contain flex p-5 items-center justify-center rounded-xl sm:overflow-hidden sm:flex-wrap'>
+        <div className=' bg-indigo-900 w-auto h-44 sm:h-full sm:w-8/12 overflow-x-auto overscroll-x-contain flex p-5 items-center justify-center rounded-xl sm:overflow-hidden sm:flex-wrap mx-4'>
 
           {
-            propsIcons.map((iconProp, index) => <IconSkill key={index} logoURL={iconProp.urlIcon} nameLogo={iconProp.nameAlt} widthLogo={iconProp.widthLogo} />)
+            propsIcons.map((iconProp, index) => <IconSkill className='px-5' key={index} logoURL={iconProp.urlIcon} nameLogo={iconProp.nameAlt} widthLogo={iconProp.widthLogo} />)
           }
 
         </div>
