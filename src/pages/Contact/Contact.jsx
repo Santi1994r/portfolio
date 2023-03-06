@@ -1,17 +1,57 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useRef } from "react";
-import * as Yup from "yup";
-import FormJS from "./FormJS";
+import emailjs from '@emailjs/browser';
+import { Formik, Form, Field, ErrorMessage } from "formik"
+import { useEffect, useRef, React } from "react"
+import * as Yup from "yup"
+import FormJS from "./FormJS"
 
 const Contact = () => {
-  const form = useRef()
-  console.log(form.current);
-  const submitInfo = (values, { resetForm }) => {
-    console.log(values);
-    resetForm();
+  const formRef = useRef()
+/*   const submitFormik = (values) => {
+    console.log(values)
+  } */
+/*   useEffect(() => {
+    console.log(formRef.current.from_name.value)
+  }, []) */
+  
+/*   const submitInfo = ({ resetForm }) => {
+    console.log(formRef.current.from_name.value)
+    console.log(formRef.current.user_id.value)
+    console.log(formRef.current.message.value)
+    emailjs.sendForm('service_hc1t2il', 'template_1dkvk1w', formRef.current, 'yNLc2Kbwkbsvics7M')
+    .then((result) => {
+      btn.value = 'Send Email'
+      alert(result + 'Mensaje Enviado!')
+    }, (err) => {
+      btn.value = 'Send Email'
+      alert('Error')
+      alert(JSON.stringify(err))
+    });
+
+    resetForm()
+  }; */
+
+  const sendEmail = (value) => {
+    value.preventDefault();
+    emailjs.send("service_ggg0048","template_omljmxt",{
+      from_name: formRef.current.from_name.value,
+      message: formRef.current.message.value,
+      user_id: formRef.current.user_id.value,
+      },
+      'yNLc2Kbwkbsvics7M')
+      .then((resp) => {
+        /*  btn.value = 'Send Email'; */
+        console.log(resp);
+        alert('Mensaje enviado');
+        
+      })
+      .catch((err) => {
+        /*  btn.value = 'Send Email'; */
+        alert("El error es: " + JSON.stringify(err));
+      });
+      formRef.current.from_name.value = ''
+      formRef.current.message.value = ''
+      formRef.current.user_id.value = ''
   };
-
-
 
   const validation = Yup.object({
     from_name: Yup.string().required(
@@ -23,7 +63,7 @@ const Contact = () => {
     message: Yup.string().required(
       <p className="text-danger text-2xl">Campo requerido</p>
     ),
-  });
+  })
 
   return (
     <div id="Contact" className=" bg-black">
@@ -37,14 +77,14 @@ const Contact = () => {
       <Formik
         initialValues={{
           from_name: "",
-          user_email: "",
+          user_id: "",
           message: "",
         }}
         validationSchema={validation}
-        onSubmit={submitInfo}
+        onSubmit={sendEmail}
       >
         <Form
-        ref={form}
+          ref={formRef}
           id="form"
           className="flex flex-col items-center gap-5 mt-10 pb-10 "
         >
@@ -58,12 +98,12 @@ const Contact = () => {
           <ErrorMessage name="from_name" />
           <Field
             type="text"
-            name="user_email"
-            id="user_email"
+            name="user_id"
+            id="user_id"
             className=" w-10/12 md:w-96 p-3"
             placeholder="Ingresa tu e-mail"
           />
-          <ErrorMessage name="user_email" />
+          <ErrorMessage name="user_id" />
           <Field
             name="message"
             id="message"
@@ -72,7 +112,7 @@ const Contact = () => {
           />
           <ErrorMessage name="message" />
           <button
-           /*  onClick={sendEmail} */
+            onClick={sendEmail}
             id="button"
             type="submit"
             className="text-white"
@@ -82,7 +122,7 @@ const Contact = () => {
           {/*      <input onClick={handleBtn} type="submit" id="button" className="text-white text-xl bg-indigo-900 p-3 rounded-xl font-medium hover:bg-indigo-700 cursor-pointer" value="Enviar" /> */}
         </Form>
       </Formik>
-      {/* <FormJS /> */}
+     {/*  <FormJS /> */}
     </div>
   );
 };
