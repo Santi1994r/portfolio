@@ -7,7 +7,7 @@ import AlertEmail from "../../components/AlertEmail/AlertEmail";
 
 
 const Contact = () => {
-  const [alertEmail, setAlertEmail] = useState(true);
+  const [alertEmail, setAlertEmail] = useState(false);
   const formRef = useRef();
   const btnSubmit = useRef();
 
@@ -109,9 +109,9 @@ const Contact = () => {
           />
           <div className='absolute'>{alertEmail ? <AlertEmail icon={true} text1={'E-mail enviado con éxito'} text2={'Gracias por tu mensaje.'} /> : null}</div>
 
-         {/*  {setTimeout(() => {
+          {setTimeout(() => {
             setAlertEmail(false);
-          }, 3000)} */}
+          }, 4000)}
           {/*      <input onClick={handleBtn} type="submit" id="button" className="text-white text-xl bg-indigo-900 p-3 rounded-xl font-medium hover:bg-indigo-700 cursor-pointer" value="Enviar" /> */}
         </Form>
       </Formik>

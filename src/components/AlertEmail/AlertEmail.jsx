@@ -5,11 +5,11 @@ import { HiOutlineCheckCircle } from 'react-icons/hi';
 
 const AlertEmail = ({icon, text1, text2}) => {
   return (
-    <div role="alert" className="rounded-xl border bg-green-900 border-gray-100 p-4 shadow-xl">
+    <div role="alert" className={`rounded-xl border ${icon ? 'bg-green-900' : ' bg-red-700'}  border-gray-100 p-4 shadow-xl`}>
       <div className="flex items-start gap-4">
         <span className="text-green-600">
           {
-            icon ? <HiOutlineCheckCircle className=' h-8 w-10' /> : <VscError className=" h-8 w-10" />
+            icon ? <HiOutlineCheckCircle className=' h-8 w-10 text-green-300' /> : <VscError className=" h-8 w-10 text-white" />
           }
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,12 +30,13 @@ const AlertEmail = ({icon, text1, text2}) => {
 
         <div className="flex-1">
           <strong className="block font-medium text-white">
-            {" "}
-            E-mail enviado con éxito
+            {`${icon ? 'E-mail enviado con éxito' : 'Error'}`}
+            
           </strong>
 
           <p className="mt-1 text-sm text-white">
-            Gracias por tu mensaje.
+          {`${icon ? 'Gracias por tu mensaje' : 'No se puede enviar el mail incompleto'}`}
+            
           </p>
         </div>
 
