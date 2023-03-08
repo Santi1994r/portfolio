@@ -14,12 +14,12 @@ const FormJS = () => {
       },
       'yNLc2Kbwkbsvics7M')
       .then((resp) => {
-        /*  btn.value = 'Send Email'; */
+         btn.value = 'Send Email';
         console.log(resp);
         alert("Sent!");
       })
       .catch((err) => {
-        /*  btn.value = 'Send Email'; */
+         btn.value = 'Send Email';
         alert("El error es: " + JSON.stringify(err));
       });
   };

@@ -1,69 +1,57 @@
-import emailjs from '@emailjs/browser';
-import { Formik, Form, Field, ErrorMessage } from "formik"
-import { useEffect, useRef, React } from "react"
-import * as Yup from "yup"
-import FormJS from "./FormJS"
+import emailjs from "@emailjs/browser";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useEffect, useRef, React, useState } from "react";
+import * as Yup from "yup";
+import AlertEmail from "../../components/AlertEmail/AlertEmail";
+/* import FormJS from "./FormJS"; */
+
 
 const Contact = () => {
-  const formRef = useRef()
-/*   const submitFormik = (values) => {
-    console.log(values)
-  } */
-/*   useEffect(() => {
-    console.log(formRef.current.from_name.value)
-  }, []) */
-  
-/*   const submitInfo = ({ resetForm }) => {
-    console.log(formRef.current.from_name.value)
-    console.log(formRef.current.user_id.value)
-    console.log(formRef.current.message.value)
-    emailjs.sendForm('service_hc1t2il', 'template_1dkvk1w', formRef.current, 'yNLc2Kbwkbsvics7M')
-    .then((result) => {
-      btn.value = 'Send Email'
-      alert(result + 'Mensaje Enviado!')
-    }, (err) => {
-      btn.value = 'Send Email'
-      alert('Error')
-      alert(JSON.stringify(err))
-    });
-
-    resetForm()
-  }; */
+  const [alertEmail, setAlertEmail] = useState(true);
+  const formRef = useRef();
+  const btnSubmit = useRef();
 
   const sendEmail = (value) => {
+    btnSubmit.current.value = "Enviando";
     value.preventDefault();
-    emailjs.send("service_ggg0048","template_omljmxt",{
-      from_name: formRef.current.from_name.value,
-      message: formRef.current.message.value,
-      user_id: formRef.current.user_id.value,
-      },
-      'yNLc2Kbwkbsvics7M')
+    emailjs
+      .send(
+        "service_ggg0048",
+        "template_omljmxt",
+        {
+          from_name: formRef.current.from_name.value,
+          message: formRef.current.message.value,
+          user_id: formRef.current.user_id.value,
+        },
+        "yNLc2Kbwkbsvics7M"
+      )
       .then((resp) => {
-        /*  btn.value = 'Send Email'; */
+        setTimeout(() => {
+          btnSubmit.current.value = "Enviar e-mail";
+          formRef.current.from_name.value = "";
+          formRef.current.message.value = "";
+          formRef.current.user_id.value = "";
+        }, 3000);
         console.log(resp);
-        alert('Mensaje enviado');
-        
+        setAlertEmail(true);
       })
       .catch((err) => {
-        /*  btn.value = 'Send Email'; */
+        btnSubmit.current.value = "Enviar e-mail";
         alert("El error es: " + JSON.stringify(err));
       });
-      formRef.current.from_name.value = ''
-      formRef.current.message.value = ''
-      formRef.current.user_id.value = ''
   };
 
   const validation = Yup.object({
     from_name: Yup.string().required(
       <p className="text-danger text-2xl">Campo requerido</p>
     ),
-    user_email: Yup.string()
+    user_id: Yup.string()
       .email(<p className="text-danger text-2xl">Formato de E-mail invalido</p>)
       .required(<p className="text-danger text-2xl">Campo requerido</p>),
     message: Yup.string().required(
       <p className="text-danger text-2xl">Campo requerido</p>
     ),
-  })
+  });
 
   return (
     <div id="Contact" className=" bg-black">
@@ -111,18 +99,23 @@ const Contact = () => {
             placeholder="Ingresa un mensaje"
           />
           <ErrorMessage name="message" />
-          <button
+          <input
+            ref={btnSubmit}
             onClick={sendEmail}
             id="button"
             type="submit"
-            className="text-white"
-          >
-            Enviar
-          </button>
+            className="text-white bg-indigo-800 p-3 rounded-lg"
+            value="Enviar e-mail"
+          />
+          <div className='absolute'>{alertEmail ? <AlertEmail icon={true} text1={'E-mail enviado con éxito'} text2={'Gracias por tu mensaje.'} /> : null}</div>
+
+         {/*  {setTimeout(() => {
+            setAlertEmail(false);
+          }, 3000)} */}
           {/*      <input onClick={handleBtn} type="submit" id="button" className="text-white text-xl bg-indigo-900 p-3 rounded-xl font-medium hover:bg-indigo-700 cursor-pointer" value="Enviar" /> */}
         </Form>
       </Formik>
-     {/*  <FormJS /> */}
+      {/*  <FormJS /> */}
     </div>
   );
 };
