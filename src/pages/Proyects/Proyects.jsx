@@ -80,7 +80,7 @@ const Proyects = () => {
         {proyects.map((proyect) => (
           <div
             key={proyect.image}
-            className="flex flex-col items-center bg-indigo-900 w-96 rounded-xl hover:scale-110 duration-150"
+            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-96 rounded-xl hover:scale-110 duration-150"
           >
             <h6 className="text-center text-white p-2 text-xl">
               {proyect.name}
@@ -103,9 +103,9 @@ const Proyects = () => {
             </div>
             <div className=" my-3 flex p-3">
               <Link to={proyect.urlCode} target="_blank">
-                <button className="rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 w-40">
+                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 sm:w-40">
                   <img
-                    className=" w-10 mr-2"
+                    className=" w-10 sm:mr-2"
                     src="https://i.imgur.com/FuPrLd7.png"
                     alt="santiago ruiz"
                   />
@@ -113,9 +113,9 @@ const Proyects = () => {
                 </button>
               </Link>
               <Link to={proyect.deployment} target="_blank">
-                <button className="rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 w-40">
+                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
                   <img
-                    className=" w-10 rounded-xl mr-2"
+                    className=" w-10 rounded-xl sm:mr-2"
                     src="https://i.imgur.com/vKTfk5I.jpg"
                     alt="santiago ruiz"
                   />
