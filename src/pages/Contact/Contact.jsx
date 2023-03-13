@@ -33,7 +33,7 @@ const Contact = () => {
           formRef.current.user_id.value = "";
         }, 3000);
         console.log(resp);
-        setAlertEmail(true);
+        
       })
       .catch((err) => {
         btnSubmit.current.value = "Enviar e-mail";

@@ -15,15 +15,8 @@ const Index = () => {
       ? setIAm(!iAm)
       : index === 3 && setSantiago(!Santiago);
   };
-  const handleTextMobile = () => {
-    setTransition(true);
-    setHello(!hello);
-    setIAm(!iAm);
-    setSantiago(!Santiago);
-  };
   return (
     <section
-      onClick={handleTextMobile}
       className="relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] sm:bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat"
     >
     <div className="absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
