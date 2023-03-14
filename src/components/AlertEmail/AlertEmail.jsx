@@ -35,7 +35,7 @@ const AlertEmail = ({icon, text1, text2}) => {
           </strong>
 
           <p className="mt-1 text-sm text-white">
-          {`${icon ? 'Gracias por tu mensaje' : 'No se puede enviar el mail incompleto'}`}
+          {`${icon ? 'Gracias por tu mensaje' : 'No se puede enviar el mail vacío ó incompleto'}`}
             
           </p>
         </div>
