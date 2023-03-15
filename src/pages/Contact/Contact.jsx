@@ -30,10 +30,10 @@ const Contact = () => {
       )
       .then((resp) => {
         /* habia un setTimeOut de 3s */
+        formRef.current.from_name.value = "";
+        formRef.current.message.value = "";
+        formRef.current.user_id.value = "";
           btnSubmit.current.value = "Enviar e-mail";
-          formRef.current.from_name.value = "";
-          formRef.current.message.value = "";
-          formRef.current.user_id.value = "";
           setAlertEmail(true)
     
         console.log(resp);
@@ -116,6 +116,9 @@ const Contact = () => {
 
           {setTimeout(() => {
             setAlertEmail(false);
+          /*   formRef.current.from_name.value = "";
+          formRef.current.message.value = "";
+          formRef.current.user_id.value = ""; */
           }, 4000)}
         </Form>
       </Formik>
