@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useRef, React, useState } from "react";
+import { useRef, React, useState, useEffect } from "react";
 import * as Yup from "yup";
 import AlertEmail from "../../components/AlertEmail/AlertEmail";
 
@@ -128,12 +128,19 @@ const Contact = () => {
             ) : null}
           </div>
 
-          {setTimeout(() => {
-            setAlertEmail(false);
-            formRef.current.from_name.value = "";
-            formRef.current.message.value = "";
-            formRef.current.user_id.value = "";
-          }, 3000)}
+          {
+            useEffect(() => {
+              setTimeout(() => {
+                setAlertEmail(false);
+                formRef.current.from_name.value = "";
+                formRef.current.message.value = "";
+                formRef.current.user_id.value = "";
+              }, 3000)
+            }, [alertEmail])
+            }
+            
+          
+
         </Form>
       </Formik>
     </div>
