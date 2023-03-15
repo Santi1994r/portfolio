@@ -10,6 +10,7 @@ const Contact = () => {
   const btnSubmit = useRef();
 
   const sendEmail = (value) => {
+    value.preventDefault();
     if (
       formRef.current.from_name.value == "" ||
       formRef.current.message.value == "" ||
@@ -19,7 +20,6 @@ const Contact = () => {
       return;
     }
     btnSubmit.current.value = "Enviando";
-    value.preventDefault();
     emailjs
       .send(
         "service_ggg0048",
@@ -33,13 +33,13 @@ const Contact = () => {
       )
       .then((resp) => {
         /* habia un setTimeOut de 3s */
-        setTimeout(() => {
-          formRef.current.from_name.value = "";
-          formRef.current.message.value = "";
-          formRef.current.user_id.value = "";
-          btnSubmit.current.value = "Enviar e-mail";
-          setAlertEmail(true);
-        }, 1000);
+        /*    setTimeout(() => { */
+        /* formRef.current.from_name.value = "";
+        formRef.current.message.value = "";
+        formRef.current.user_id.value = ""; */
+        btnSubmit.current.value = "Enviar e-mail";
+        setAlertEmail(true);
+        /*       }, 1000); */
 
         console.log(resp);
       })
@@ -133,7 +133,7 @@ const Contact = () => {
             formRef.current.from_name.value = "";
             formRef.current.message.value = "";
             formRef.current.user_id.value = "";
-          }, 4000)}
+          }, 3000)}
         </Form>
       </Formik>
     </div>
