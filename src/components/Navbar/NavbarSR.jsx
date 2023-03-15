@@ -15,8 +15,8 @@ const NavbarSR = () => {
         />
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
-          <nav aria-label="Site Nav" className="hidden md:block">
-            <ul className="flex items-center gap-6 text-sm">
+          <nav aria-label="Site Nav" className="">
+            <ul className="sm:flex sm:items-center items-center gap-6 text-sm">
               <li>
                 <Link
                   to="About"

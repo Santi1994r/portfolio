@@ -80,7 +80,7 @@ const Proyects = () => {
         {proyects.map((proyect) => (
           <div
             key={proyect.image}
-            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-96 rounded-xl hover:scale-110 duration-150"
+            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-96 rounded-xl hover:sm:scale-110 duration-150"
           >
             <h6 className="text-center text-white p-2 text-xl">
               {proyect.name}

@@ -9,6 +9,7 @@ const Contact = () => {
   const [alertEmail, setAlertEmail] = useState(false);
   const formRef = useRef();
   const btnSubmit = useRef();
+  
   const sendEmail = (value) => {
     if(formRef.current.from_name.value == "" || formRef.current.message.value == "" || formRef.current.user_id.value == "") {
       setAlertEmail('error')
