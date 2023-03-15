@@ -4,16 +4,19 @@ import { useRef, React, useState } from "react";
 import * as Yup from "yup";
 import AlertEmail from "../../components/AlertEmail/AlertEmail";
 
-
 const Contact = () => {
   const [alertEmail, setAlertEmail] = useState(false);
   const formRef = useRef();
   const btnSubmit = useRef();
-  
+
   const sendEmail = (value) => {
-    if(formRef.current.from_name.value == "" || formRef.current.message.value == "" || formRef.current.user_id.value == "") {
-      setAlertEmail('error')
-      return
+    if (
+      formRef.current.from_name.value == "" ||
+      formRef.current.message.value == "" ||
+      formRef.current.user_id.value == ""
+    ) {
+      setAlertEmail("error");
+      return;
     }
     btnSubmit.current.value = "Enviando";
     value.preventDefault();
@@ -30,14 +33,15 @@ const Contact = () => {
       )
       .then((resp) => {
         /* habia un setTimeOut de 3s */
-        formRef.current.from_name.value = "";
-        formRef.current.message.value = "";
-        formRef.current.user_id.value = "";
+        setTimeout(() => {
+          formRef.current.from_name.value = "";
+          formRef.current.message.value = "";
+          formRef.current.user_id.value = "";
           btnSubmit.current.value = "Enviar e-mail";
-          setAlertEmail(true)
-    
+          setAlertEmail(true);
+        }, 1000);
+
         console.log(resp);
-        
       })
       .catch((err) => {
         btnSubmit.current.value = "Enviar e-mail";
@@ -111,14 +115,24 @@ const Contact = () => {
             className="text-white bg-indigo-800 p-3 rounded-lg"
             value="Enviar e-mail"
           />
-          
-          <div className='absolute'>{alertEmail == true ? <AlertEmail icon={true} text1={'E-mail enviado con éxito'} text2={'Gracias por tu mensaje.'} /> : alertEmail == 'error' ? <AlertEmail icon={false} /> : null}</div>
+
+          <div className="absolute">
+            {alertEmail == true ? (
+              <AlertEmail
+                icon={true}
+                text1={"E-mail enviado con éxito"}
+                text2={"Gracias por tu mensaje."}
+              />
+            ) : alertEmail == "error" ? (
+              <AlertEmail icon={false} />
+            ) : null}
+          </div>
 
           {setTimeout(() => {
             setAlertEmail(false);
-          /*   formRef.current.from_name.value = "";
-          formRef.current.message.value = "";
-          formRef.current.user_id.value = ""; */
+            formRef.current.from_name.value = "";
+            formRef.current.message.value = "";
+            formRef.current.user_id.value = "";
           }, 4000)}
         </Form>
       </Formik>
