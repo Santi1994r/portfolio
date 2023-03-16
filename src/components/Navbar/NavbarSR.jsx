@@ -7,7 +7,7 @@ const NavbarSR = () => {
 
   return (
     <header aria-label="Site Header" className="bg-indigo-900 lg:hidden">
-      <div className="mx-auto flex h-auto max-w-screen-xl items-center gap-8 p-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-auto max-w-screen-xl items-center p-3 sm:px-6 lg:px-8">
         <img
           className="w-20 rounded-3xl"
           src="https://i.imgur.com/vKTfk5I.jpg"
@@ -16,7 +16,7 @@ const NavbarSR = () => {
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Site Nav" className="">
-            <ul className="sm:flex sm:items-center items-center gap-6 text-sm">
+            <ul className="sm:flex sm:items-center gap-6 text-sm">
               <li>
                 <Link
                   to="About"

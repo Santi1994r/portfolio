@@ -40,7 +40,7 @@ const About = () => {
       </section>
       <section className="flex justify-center mt-10">
         <Link
-          to="https://drive.google.com/file/d/1pKyBb4A1u3HtuisJhFQpXeGMVuVSAc2e/view?usp=sharing"
+          to="https://drive.google.com/file/d/1e-usAxm9j2_fWwgmuRYa4Cn0yGqJqHJH/view?usp=sharing"
           target="_blank"
         >
           <button className=" bg-indigo-300 p-3 text-black rounded-lg hover:bg-indigo-500 hover:text-white">

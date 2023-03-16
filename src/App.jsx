@@ -1,4 +1,5 @@
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 import NavbarSR from './components/Navbar/NavbarSR'
 import ToggleMain from './components/ToggleMain/ToggleMain'
 import About from './pages/About/About'
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <>
-      <NavbarSR />
+      {/* <NavbarSR /> */}
+     {/*  <Navbar /> */}
       {/* <ToggleMain /> */}
       <Index />
       <About />

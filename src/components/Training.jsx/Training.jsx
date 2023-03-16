@@ -10,11 +10,11 @@ const Training = () => {
       <div className=" bg-indigo-900 rounded-xl w-full">
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
           <p className=" text-white sm:mr-5 text-2xl text-center">Desarrollo web</p>
-          <Modal urlCertificate={'https://i.imgur.com/XAA2VAD.png'} altCertificate={'certificado desarrollo web'} />
+          <Modal urlCertificate={'https://i.imgur.com/XAA2VAD.png'} altCertificate={'certificado desarrollo web'} nameModal={'modal1'} />
         </div>
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
           <p className=" text-white sm:mr-5 text-2xl text-center">JavaScript</p>
-          <Modal urlCertificate={'https://i.imgur.com/SCnTZ7B.png'} altCertificate={'certificado javascript'} />
+          <Modal urlCertificate={'https://i.imgur.com/SCnTZ7B.png'} altCertificate={'certificado javascript'} nameModal={'modal2'} />
         </div>
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
           <p className=" text-white sm:mr-5 text-2xl text-center">React - Coderhouse</p>
@@ -22,12 +22,6 @@ const Training = () => {
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
           <p className=" text-white sm:mr-5 text-2xl text-center">Python - Coderhouse</p>
         </div>
-{/*         <div className=" flex flex-col items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
-          <p className=" text-white mr-5 text-2xl">Autodidacta</p>
-          <p className=" text-white mr-5 text-2xl">
-            Todo lo demas lo aprendi por mi cuenta...
-          </p>
-        </div> */}
       </div>
     </section>
   );
