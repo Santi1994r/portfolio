@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavbarSR = () => {
+  const [menuMobile, setMenuMobile] = useState(false)
   const openNavMobile = () => {
-    console.log("abierto");
+    setMenuMobile(!menuMobile)
   };
 
   return (
@@ -16,12 +18,12 @@ const NavbarSR = () => {
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Site Nav" className="">
-            <ul className="sm:flex sm:items-center gap-6 text-sm">
+            <ul className="sm:flex sm:items-center gap-6 text-sm hidden">
               <li>
                 <Link
                   to="About"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl ml-8"
                 >
                   Sobre mí
                 </Link>
@@ -82,6 +84,44 @@ const NavbarSR = () => {
             }
           </div>
         </div>
+      </div>
+
+      <div className={`${menuMobile ? 'fixed bg-indigo-900 top-0 right-0 left-0 bottom-0' : 'hidden'}`}>
+        <div className="flex justify-end">
+          <p onClick={openNavMobile} className="text-white h-0 pr-5 pt-5 text-2xl">X</p>
+        </div>
+        <ul className="flex flex-col items-center justify-around h-full text-sm">
+              <li>
+                <Link
+                  onClick={openNavMobile}
+                  to="About"
+                  smooth={true}
+                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                >
+                  Sobre mí
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={openNavMobile}
+                  to="Proyects"
+                  smooth={true}
+                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                >
+                  Proyectos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={openNavMobile}
+                  to="Contact"
+                  smooth={true}
+                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                >
+                  Contacto
+                </Link>
+              </li>
+            </ul>
       </div>
     </header>
   );

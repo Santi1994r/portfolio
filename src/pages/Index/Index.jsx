@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Index = () => {
   const [hello, setHello] = useState(false);
@@ -17,17 +17,19 @@ const Index = () => {
   };
   return (
     <section
-      className="relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] sm:bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat"
+      className="sm:relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] sm:bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat"
     >
-    <div className="absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
+    {<div className="sm:absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>}
 
-      <div className="relative flex flex-col items-start justify-end sm:justify-center pt-2 pb-10 h-screen mx-auto max-w-screen-xl px-4 py-32 sm:px-6  lg:h-screen lg:px-8">
+      <div className="sm:relative flex flex-col items-start justify-end sm:justify-center pt-2 pb-10 h-screen mx-auto max-w-screen-xl px-4 py-32 sm:px-6  lg:h-screen lg:px-8">
         {/*       <div className='flex self-center sm:hidden'>
           <p className=' text-black'>Toca en cualquier lado</p>
       </div> */}
 
         <div className="max-w-xl text-center sm:text-left mb-10">
-          <Link to={"/sobre mí"}>
+          <Link 
+            to='About'
+            smooth={true}>
             <h1
               onMouseEnter={() => handleText(1)}
               className={` font-extrabold text-4xl sm:text-8xl text-gray-50 delay-75 ${
@@ -40,7 +42,9 @@ const Index = () => {
               {hello ? "Sobre mí" : "Hola"}
             </h1>
           </Link>
-          <Link to={"/proyectos"}>
+          <Link 
+            to='Proyects'
+            smooth={true}>
             <h1
               onMouseEnter={() => handleText(2)}
               className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
@@ -53,7 +57,9 @@ const Index = () => {
               {iAm ? "Proyectos" : "Soy"}
             </h1>
           </Link>
-          <Link to={"/contacto"}>
+          <Link 
+            to='Contact'
+            smooth={true}>
             <h1
               onMouseEnter={() => handleText(3)}
               className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
