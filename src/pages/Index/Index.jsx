@@ -17,7 +17,7 @@ const Index = () => {
   };
   return (
     <section
-      className="sm:relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] sm:bg-[url(https://i.imgur.com/m7ZYdkQ.jpg)] bg-cover bg-center bg-no-repeat"
+      className="sm:relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] bg-cover bg-center bg-no-repeat"
     >
     <div className="sm:absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
 
@@ -28,7 +28,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(1)}
-              className={` font-extrabold text-4xl sm:text-8xl text-gray-50 delay-75 ${
+              className={` font-extrabold text-4xl sm:text-8xl text-neutral-600 sm:text-gray-50 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
