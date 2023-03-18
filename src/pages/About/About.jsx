@@ -9,7 +9,7 @@ const About = () => {
       <section id="About" className="flex flex-col items-center">
         <div className="flex flex-col items-center justify-start mt-32 sm:mt-44">
           <h1 className=" text-white text-center text-6xl sm:text-8xl font-bold text-shadow shadow-xl animate-pulse">
-            I am a front-end developer{" "}
+            I am a front-end developer
           </h1>
         </div>
         <h3 className=" text-white text-center my-10 text-4xl sm:text-5xl font-bold w-8/12">
