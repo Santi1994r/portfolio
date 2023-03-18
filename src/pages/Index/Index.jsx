@@ -28,7 +28,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(1)}
-              className={` font-extrabold text-4xl sm:text-8xl text-neutral-600 sm:text-gray-50 delay-75 ${
+              className={` font-extrabold text-7xl sm:text-8xl text-neutral-600 sm:text-gray-50 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -43,7 +43,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(2)}
-              className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-6xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -58,7 +58,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(3)}
-              className={` font-extrabold text-4xl sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-6xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
