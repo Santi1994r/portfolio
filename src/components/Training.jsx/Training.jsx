@@ -3,7 +3,7 @@ import Modal from "../Modal/Modal";
 
 const Training = () => {
   return (
-    <section className="flex flex-col w-8/12 m-auto">
+    <section className="flex flex-col w-10/12 sm:w-8/12 m-auto">
       <h4 className="text-white text-center mt-28 mb-5 text-4xl font-bold">
         Training
       </h4>
