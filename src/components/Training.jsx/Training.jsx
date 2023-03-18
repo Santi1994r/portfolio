@@ -5,11 +5,11 @@ const Training = () => {
   return (
     <section className="flex flex-col w-8/12 m-auto">
       <h4 className="text-white text-center mt-28 mb-5 text-4xl font-bold">
-        Capacitación
+        Training
       </h4>
       <div className=" bg-indigo-900 rounded-xl w-full">
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
-          <p className=" text-white sm:mr-5 text-2xl text-center">Desarrollo web</p>
+          <p className=" text-white sm:mr-5 text-2xl text-center">Web development</p>
           <Modal urlCertificate={'https://i.imgur.com/XAA2VAD.png'} altCertificate={'certificado desarrollo web'} nameModal={'modal1'} />
         </div>
         <div className=" flex flex-col sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">

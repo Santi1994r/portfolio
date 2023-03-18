@@ -64,11 +64,10 @@ const Contact = () => {
   return (
     <div id="Contact" className=" bg-black">
       <h6 className="text-center text-white pt-20 pb-10 text-4xl font-bold">
-        Contactame
+        Contact me
       </h6>
-      <p className=" text-center text-white text-2xl">
-        Si quieres contactarme para que trabajemos juntos dejame un mensaje y te
-        responderé a la brevedad.
+      <p className=" text-center text-white text-2xl px-4">
+        If you want to contact me so we can work together, leave me a message and I will get back to you as soon as possible.
       </p>
       <Formik
         initialValues={{
@@ -89,7 +88,7 @@ const Contact = () => {
             name="from_name"
             id="from_name"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Ingresa tu nombre"
+            placeholder="Enter your name"
           />
           <ErrorMessage name="from_name" />
           <Field
@@ -97,14 +96,14 @@ const Contact = () => {
             name="user_id"
             id="user_id"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Ingresa tu e-mail"
+            placeholder="Enter your email address"
           />
           <ErrorMessage name="user_id" />
           <Field
             name="message"
             id="message"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Ingresa un mensaje"
+            placeholder="Enter a message"
           />
           <ErrorMessage name="message" />
           <input
@@ -113,7 +112,7 @@ const Contact = () => {
             id="button"
             type="submit"
             className="text-white bg-indigo-800 p-3 rounded-lg"
-            value="Enviar e-mail"
+            value="Send e-mail"
           />
 
           <div className="absolute">

@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center justify-center mt-32 sm:mt-44">
           <h1 className=" text-white text-center text-4xl sm:text-8xl">
-            Soy desarrollador Front End{" "}
+            I am a front-end developer{" "}
           </h1>
         </div>
       </section>
@@ -22,20 +22,13 @@ const About = () => {
 
       <section className="flex flex-col items-center">
         <h3 className=" text-white text-center mb-10 text-5xl sm:text-5xl font-bold w-8/12">
-          Sobre mí
+          About me
         </h3>
         <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
-          Hi, I’m Dejan. I'm a multi-talented human with over 10+ years of
-          experiences in wide range of design disciplines. You can also call me
-          a product designer, experience designer, interaction, UI, UX or by any
-          other market defined function-title. I'm also a multi-disciplinary
-          maker with over 10 years of experiences in wide range of design
-          disciplines, manager, advisor, entrepreneur, front-end developer,
-          music enthusiast, traveler, photographer and more. I don’t like to
-          define myself by the work I’ve done. I define myself by the work I
-          want to do. Skills can be taught, personality is inherent. I prefer to
-          keep learning, continue challenging myself, and do interesting things
-          that matter.
+          I considerer myself a technology lover,
+          with an open mind to learn new technologies. All the knowledge i
+          acquire i traslate it into projects, either on my own or working in a
+          group through the SCRUM methodology, management of good practices.
         </p>
       </section>
       <section className="flex justify-center mt-10">

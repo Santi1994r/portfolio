@@ -39,7 +39,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(1)}
             >
-              {hello ? "Sobre mí" : "Hola"}
+              {hello ? "About me" : "Hi,"}
             </h1>
           </Link>
           <Link 
@@ -54,7 +54,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(2)}
             >
-              {iAm ? "Proyectos" : "Soy"}
+              {iAm ? "Proyects" : "I am"}
             </h1>
           </Link>
           <Link 
@@ -69,7 +69,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(3)}
             >
-              {Santiago ? "Contacto" : "Santiago"}
+              {Santiago ? "Contact" : "Santiago"}
             </h1>
           </Link>
           {/*  <div className="mt-8 flex flex-wrap gap-4 text-center">
