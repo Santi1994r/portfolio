@@ -96,7 +96,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="About"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   About me
                 </Link>
@@ -106,7 +106,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="Proyects"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   Proyects
                 </Link>
@@ -116,7 +116,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="Contact"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
+                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   Contact
                 </Link>
