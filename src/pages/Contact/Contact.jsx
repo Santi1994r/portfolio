@@ -51,13 +51,13 @@ const Contact = () => {
 
   const validation = Yup.object({
     from_name: Yup.string().required(
-      <p className="text-danger text-2xl">Campo requerido</p>
+      <p className="text-danger text-2xl">Ingresa tu nombre</p>
     ),
     user_id: Yup.string()
       .email(<p className="text-danger text-2xl">Formato de E-mail invalido</p>)
-      .required(<p className="text-danger text-2xl">Campo requerido</p>),
+      .required(<p className="text-danger text-2xl">Ingresa tu mail</p>),
     message: Yup.string().required(
-      <p className="text-danger text-2xl">Campo requerido</p>
+      <p className="text-danger text-2xl">Ingresa un mensaje</p>
     ),
   });
 
