@@ -37,7 +37,7 @@ const About = () => {
           target="_blank"
         >
           <button className=" bg-indigo-300 p-3 text-black rounded-lg hover:bg-indigo-500 hover:text-white">
-            Descargar CV
+            Download CV
           </button>
         </Link>
       </section>
