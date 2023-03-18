@@ -43,7 +43,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(2)}
-              className={` font-extrabold text-6xl sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-5xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
@@ -58,7 +58,7 @@ const Index = () => {
             smooth={true}>
             <h1
               onMouseEnter={() => handleText(3)}
-              className={` font-extrabold text-6xl sm:text-8xl text-rose-700 delay-75 ${
+              className={` font-extrabold text-5xl sm:text-8xl text-rose-700 delay-75 ${
                 transition
                   ? "hover:translate-x-9 duration-300 delay-75 ease-linear cursor-pointer"
                   : null
