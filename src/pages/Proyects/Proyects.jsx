@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Proyects = () => {
+  const [numberText, setNumberText] = useState(true)
   const proyects = [
     {
       name: "Ecommerce",
@@ -101,10 +103,10 @@ const Proyects = () => {
       urlCode: "https://github.com/ProjectsDevLatam/AromaticsApp",
       deployment: "https://aromatics.netlify.app/",
     },
-    /* {
-      name: "Agenda Digital",
-      info: "Sitio web simulando...",
-      image: "https://i.imgur.com/XL7X7Wf.png",
+    {
+      name: "Aula Equis",
+      info: "Sitio web sobre administración escolar con sus difentes roles, dir, aux, prof, alumno. Con todo un gran diseño por detras.",
+      image: "https://i.imgur.com/FqslrJ4.png",
       technologies: [
         {
           urlTech: "https://i.imgur.com/F9Up8KU.png",
@@ -115,40 +117,28 @@ const Proyects = () => {
           altImg: "css",
         },
         {
-          urlTech: "https://i.imgur.com/KPEO1MF.png",
-          altImg: "react bootstrap",
+          urlTech: "https://i.imgur.com/yEmOWLP.png",
+          altImg: "javascript",
+        },
+        {
+          urlTech: "https://i.imgur.com/mS8701n.png",
+          altImg: "tailwind",
         },
         {
           urlTech: "https://i.imgur.com/4mSWRCz.png",
           altImg: "react",
         }
       ],
-      urlCode: "https://github.com/Santi1994r/du-chocolat.git",
-      deployment: "https://du-chocolat.netlify.app/",
-    },
-    {
-      name: "Urbanos clothing",
-      info: "Sitio estatico sobre local de ropa",
-      image: "https://i.imgur.com/mKLNxkZ.png",
-      technologies: [
-        {
-          urlTech: "https://i.imgur.com/F9Up8KU.png",
-          altImg: "html",
-        },
-        {
-          urlTech: "https://i.imgur.com/1lPbeVN.png",
-          altImg: "css",
-        },
-        {
-          urlTech: "https://i.imgur.com/vucmtIm.png",
-          altImg: "bootstrap",
-        },
-      ],
-      urlCode: "https://github.com/Santi1994r/clothing-store-static.git",
-      deployment: "https://urbanos-clothing.netlify.app",
-    }, */
+      urlCode: "https://github.com/ProjectsDevLatam/Aula-Equis",
+      deployment: "https://www.aulaequis.com/",
+    }
   ]
+  
+  const handleScroll = (information) => {
+    information.length > 30 ? setNumberText(true) : null
+  }
 
+  /* handleScroll(collaborativeProjects[1].info) */
   return (
     <section id="Proyects" className=" bg-black">
       <h5 className=" text-center text-white pt-20 pb-10 text-4xl font-bold">
@@ -210,6 +200,7 @@ const Proyects = () => {
       </h5>
       <div className="flex justify-center flex-wrap gap-6">
         {collaborativeProjects.map((proyect) => (
+          
           <div
             key={proyect.image}
             className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-96 rounded-xl hover:sm:scale-110 duration-150"
@@ -217,7 +208,7 @@ const Proyects = () => {
             <h6 className="text-center text-white p-2 text-xl">
               {proyect.name}
             </h6>
-            <p className="text-center text-white p-2 text-xl h-14">{proyect.info}</p>
+            <p className={`text-center text-white p-2 text-xl h-20 ${numberText ? 'overflow-y-scroll' : null }`}>{proyect.info}</p>
             <img
               className=" w-11/12 mt-3"
               src={proyect.image}
