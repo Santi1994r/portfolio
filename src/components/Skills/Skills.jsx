@@ -39,8 +39,8 @@ const Skills = () => {
       widthLogo: 'w-36'
     },
     {
-      urlIcon: 'https://i.imgur.com/DA7OuWH.png',
-      nameAlt: 'formik',
+      urlIcon: 'https://i.imgur.com/mS8701n.png',
+      nameAlt: 'tailwind',
       widthLogo: 'w-32'
     },
     {

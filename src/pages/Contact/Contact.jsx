@@ -66,7 +66,7 @@ const Contact = () => {
       <h6 className="text-center text-white pt-20 pb-10 text-4xl font-bold">
         Contact me
       </h6>
-      <p className=" text-center text-white text-2xl px-4">
+      <p className=" text-center text-white text-2xl px-4 w-6/12 m-auto">
         If you want to contact me so we can work together, leave me a message and I will get back to you as soon as possible.
       </p>
       <Formik
@@ -111,7 +111,7 @@ const Contact = () => {
             onClick={sendEmail}
             id="button"
             type="submit"
-            className="text-white bg-indigo-800 p-3 rounded-lg"
+            className="text-white bg-indigo-800 p-3 rounded-lg cursor-pointer"
             value="Send e-mail"
           />
 
