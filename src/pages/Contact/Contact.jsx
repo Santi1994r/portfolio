@@ -19,10 +19,10 @@ const Contact = () => {
       setAlertEmail("error");
       return;
     }
-    btnSubmit.current.value = "Enviando";
+    btnSubmit.current.value = "Sending";
     emailjs
       .send(
-        "service_ggg0048",
+        "service_08damxu",
         "template_omljmxt",
         {
           from_name: formRef.current.from_name.value,
@@ -32,19 +32,11 @@ const Contact = () => {
         "yNLc2Kbwkbsvics7M"
       )
       .then((resp) => {
-        /* habia un setTimeOut de 3s */
-        /*    setTimeout(() => { */
-        /* formRef.current.from_name.value = "";
-        formRef.current.message.value = "";
-        formRef.current.user_id.value = ""; */
-        btnSubmit.current.value = "Enviar e-mail";
+        btnSubmit.current.value = "Send e-mail";
         setAlertEmail(true);
-        /*       }, 1000); */
-
-        console.log(resp);
       })
       .catch((err) => {
-        btnSubmit.current.value = "Enviar e-mail";
+        btnSubmit.current.value = "Send e-mail";
         alert("El error es: " + JSON.stringify(err));
       });
   };
