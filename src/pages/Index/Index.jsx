@@ -35,7 +35,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(1)}
             >
-              {hello ? "About me" : "Hi,"}
+              {hello ? "Sobre mí" : "Hola,"}
             </h1>
           </Link>
           <Link 
@@ -50,7 +50,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(2)}
             >
-              {iAm ? "Proyects" : "I am"}
+              {iAm ? "Proyectos" : "Soy"}
             </h1>
           </Link>
           <Link 
@@ -65,7 +65,7 @@ const Index = () => {
               }`}
               onMouseLeave={() => handleText(3)}
             >
-              {Santiago ? "Contact" : "Santiago"}
+              {Santiago ? "Contacto" : "Santiago"}
             </h1>
           </Link>
         </div>

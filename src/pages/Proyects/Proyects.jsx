@@ -142,7 +142,7 @@ const Proyects = () => {
   return (
     <section id="Proyects" className=" bg-black">
       <h5 className=" text-center text-white pt-20 pb-10 text-4xl font-bold">
-        Proyects
+        Experiencia
       </h5>
       <div className="flex justify-center flex-wrap gap-6">
         {proyects.map((proyect) => (
@@ -177,7 +177,7 @@ const Proyects = () => {
                     src="https://i.imgur.com/FuPrLd7.png"
                     alt="santiago ruiz"
                   />
-                  <p>See code</p>
+                  <p>Ver código</p>
                 </button>
               </Link>
               <Link to={proyect.deployment} target="_blank">
@@ -187,7 +187,7 @@ const Proyects = () => {
                     src="https://i.imgur.com/vKTfk5I.jpg"
                     alt="santiago ruiz"
                   />
-                  <p>See project</p>
+                  <p>Ver proyecto</p>
                 </button>
               </Link>
             </div>
@@ -196,7 +196,7 @@ const Proyects = () => {
       </div>
 
       <h5 className=" text-center text-white pt-20 pb-10 text-4xl font-bold">
-        Group work
+        Proyectos colaborativos
       </h5>
       <div className="flex justify-center flex-wrap gap-6">
         {collaborativeProjects.map((proyect) => (
@@ -232,7 +232,7 @@ const Proyects = () => {
                     src="https://i.imgur.com/FuPrLd7.png"
                     alt="santiago ruiz"
                   />
-                  <p>See code</p>
+                  <p>Ver código</p>
                 </button>
               </Link>
               <Link to={proyect.deployment} target="_blank">
@@ -242,7 +242,7 @@ const Proyects = () => {
                     src="https://i.imgur.com/vKTfk5I.jpg"
                     alt="santiago ruiz"
                   />
-                  <p>See project</p>
+                  <p>Ver proyecto</p>
                 </button>
               </Link>
             </div>

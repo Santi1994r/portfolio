@@ -19,7 +19,7 @@ const Contact = () => {
       setAlertEmail("error");
       return;
     }
-    btnSubmit.current.value = "Sending";
+    btnSubmit.current.value = "Enviando";
     emailjs
       .send(
         "service_08damxu",
@@ -32,11 +32,11 @@ const Contact = () => {
         "yNLc2Kbwkbsvics7M"
       )
       .then((resp) => {
-        btnSubmit.current.value = "Send e-mail";
+        btnSubmit.current.value = "Enviar e-mail";
         setAlertEmail(true);
       })
       .catch((err) => {
-        btnSubmit.current.value = "Send e-mail";
+        btnSubmit.current.value = "Enviar e-mail";
         alert("El error es: " + JSON.stringify(err));
       });
   };
@@ -56,10 +56,11 @@ const Contact = () => {
   return (
     <div id="Contact" className=" bg-black">
       <h6 className="text-center text-white pt-20 pb-10 text-4xl font-bold">
-        Contact me
+        Contáctame
       </h6>
       <p className=" text-center text-white text-2xl px-4 w-full sm:w-6/12 m-auto">
-        If you want to contact me so we can work together, leave me a message and I will get back to you as soon as possible.
+        Si quieres ponerte en contacto conmigo para que trabajemos juntos,
+        déjame un mensaje y me pondré en contacto contigo lo antes posible.
       </p>
       <Formik
         initialValues={{
@@ -80,7 +81,7 @@ const Contact = () => {
             name="from_name"
             id="from_name"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Enter your name"
+            placeholder="Ingrese su nombre"
           />
           <ErrorMessage name="from_name" />
           <Field
@@ -88,14 +89,14 @@ const Contact = () => {
             name="user_id"
             id="user_id"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Enter your email address"
+            placeholder="Ingrese su correo electrónico"
           />
           <ErrorMessage name="user_id" />
           <Field
             name="message"
             id="message"
             className=" w-10/12 md:w-96 p-3"
-            placeholder="Enter a message"
+            placeholder="Ingrese un mensaje"
           />
           <ErrorMessage name="message" />
           <input
@@ -104,7 +105,7 @@ const Contact = () => {
             id="button"
             type="submit"
             className="text-white bg-indigo-800 p-3 rounded-lg cursor-pointer"
-            value="Send e-mail"
+            value="Enviar e-mail"
           />
 
           <div className="absolute">
@@ -119,19 +120,14 @@ const Contact = () => {
             ) : null}
           </div>
 
-          {
-            useEffect(() => {
-              setTimeout(() => {
-                setAlertEmail(false);
-                formRef.current.from_name.value = "";
-                formRef.current.message.value = "";
-                formRef.current.user_id.value = "";
-              }, 3000)
-            }, [alertEmail])
-          }
-            
-          
-
+          {useEffect(() => {
+            setTimeout(() => {
+              setAlertEmail(false);
+              formRef.current.from_name.value = "";
+              formRef.current.message.value = "";
+              formRef.current.user_id.value = "";
+            }, 3000);
+          }, [alertEmail])}
         </Form>
       </Formik>
     </div>

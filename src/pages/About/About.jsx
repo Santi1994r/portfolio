@@ -9,24 +9,21 @@ const About = () => {
       <section id="About" className="flex flex-col items-center">
         <div className="flex flex-col items-center justify-start mt-32 sm:mt-44">
           <h1 className=" text-white text-center text-6xl sm:text-8xl font-bold text-shadow shadow-xl animate-pulse">
-            I am a front-end developer
+            Soy desarrollador Front-End
           </h1>
         </div>
         <h3 className=" text-white text-center my-10 text-4xl sm:text-5xl font-bold w-8/12">
-          About me
+          Sobre mí
         </h3>
         <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
-          My goal is to get a job in a company where I can demonstrate
-          everything I have learned and continue to grow as a developer, I like
-          challenges and working in a group. I use good practices and I am very
-          responsible. Student to be a future full stack.
+          Mi objetivo es poder conseguir un trabajo en el que pueda demostrar todo mi conocimiento y en el que pueda seguir formandome y creciendo como desarrollador. Me gustan los desafíos y el trabajo en equipo. Hago uso de buenas prácticas y soy muy responsable, tengo experiencia con la metodología SCRUM y git flow. 
         </p>
         <Link
           to="https://drive.google.com/file/d/15GsHAfhapBlZ5jitgA5Z4Q-zdEiLqmgt/view?usp=sharing"
           target="_blank"
         >
           <button className=" bg-indigo-300 p-3 text-black rounded-lg hover:bg-indigo-500 hover:text-white mt-8">
-            Download CV
+            Descargar CV
           </button>
         </Link>
       </section>
