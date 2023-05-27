@@ -12,7 +12,7 @@ const Training = () => {
         <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
           <div className="flex flex-col sm:flex-row sm:justify-center items-center mb-3 w-6/12">
             <p className=" text-white sm:mr-5 text-2xl text-center">
-              WEB DEVELOPMENT:
+              DESARROLLO WEB:
             </p>
             <ul className=" text-white">
               <li>Responsive(Grid, Flex box)</li>

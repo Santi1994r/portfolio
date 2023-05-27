@@ -33,17 +33,17 @@ const Skills = () => {
       widthLogo: 'w-36'
     },
     {
-      urlIcon: 'https://i.imgur.com/mS8701n.png',
+      urlIcon: 'https://i.imgur.com/4flgLHg.png',
       nameAlt: 'TAILWIND',
       widthLogo: 'w-32'
     },
     {
-      urlIcon: 'https://i.imgur.com/PRtDO7N.png',
+      urlIcon: 'https://i.imgur.com/6slXyBz.png',
       nameAlt: 'GIT',
       widthLogo: 'w-28'
     },
     {
-      urlIcon: 'https://i.imgur.com/FuPrLd7.png',
+      urlIcon: 'https://i.imgur.com/Ah8OL7F.png',
       nameAlt: 'GITHUB',
       widthLogo: 'w-32'
     }
