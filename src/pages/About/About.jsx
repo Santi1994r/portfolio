@@ -8,7 +8,7 @@ const About = () => {
     <div className="bg-black">
       <section id="About" className="flex flex-col items-center">
         <div className="flex flex-col items-center justify-start mt-32 sm:mt-44">
-          <h1 className=" text-white text-center text-6xl sm:text-8xl font-bold text-shadow shadow-xl animate-pulse">
+          <h1 className=" text-white text-center text-5xl sm:text-8xl font-bold text-shadow shadow-xl animate-pulse">
             Soy desarrollador Front-End
           </h1>
         </div>
