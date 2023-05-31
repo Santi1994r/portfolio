@@ -19,7 +19,7 @@ const About = () => {
           Mi objetivo es poder conseguir un trabajo en el que pueda demostrar todo mi conocimiento y en el que pueda seguir formandome y creciendo como desarrollador. Me gustan los desafíos y el trabajo en equipo. Hago uso de buenas prácticas y soy muy responsable, tengo experiencia con la metodología SCRUM y git flow. 
         </p>
         <Link
-          to="https://drive.google.com/file/d/15GsHAfhapBlZ5jitgA5Z4Q-zdEiLqmgt/view?usp=sharing"
+          to="https://drive.google.com/file/d/1lQIiDrhulcefPkoesrTuit5hpPRfZMsI/view?usp=sharing"
           target="_blank"
         >
           <button className=" bg-indigo-300 p-3 text-black rounded-lg hover:bg-indigo-500 hover:text-white mt-8">
