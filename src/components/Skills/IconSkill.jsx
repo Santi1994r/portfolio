@@ -1,7 +1,7 @@
 /* import anime from 'animejs/lib/anime.es.js'; */
 import { useEffect } from 'react';
 
-const IconSkill = ({logoURL, nameLogo, widthLogo}) => {
+const IconSkill = ({logoURL, nameLogo, widthLogo, key}) => {
 
     /* const skillLogo = {
       targets: ".skillLogo",
@@ -17,7 +17,7 @@ const IconSkill = ({logoURL, nameLogo, widthLogo}) => {
     }, []) */
   return (
     <>
-      <img className={` ${widthLogo} m-2`} src={logoURL} alt={nameLogo} />
+      <img key={key} className={` ${widthLogo} m-2`} src={logoURL} alt={nameLogo} />
     </>
   )
 }
