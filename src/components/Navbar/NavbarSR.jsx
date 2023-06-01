@@ -25,7 +25,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer text-xl ml-8"
                 >
-                  About me
+                  Sobre mí
                 </Link>
               </li>
               <li>
@@ -34,7 +34,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
                 >
-                  Proyects
+                  Experiencia
                 </Link>
               </li>
               <li>
@@ -43,7 +43,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer text-xl"
                 >
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>
@@ -98,7 +98,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
-                  About me
+                  Sobre Mí
                 </Link>
               </li>
               <li>
@@ -108,7 +108,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
-                  Proyects
+                  Experiencia
                 </Link>
               </li>
               <li>
@@ -118,7 +118,7 @@ const NavbarSR = () => {
                   smooth={true}
                   className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>

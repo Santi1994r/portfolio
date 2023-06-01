@@ -24,7 +24,6 @@ const Training = () => {
             </ul>
           </div>
           <div className=" w-6/12 flex justify-center">
-
           <Modal
             urlCertificate={"https://i.imgur.com/XAA2VAD.png"}
             altCertificate={"certificado desarrollo web"}
@@ -47,6 +46,18 @@ const Training = () => {
           </div>
           {/* <Modal urlCertificate={'https://i.imgur.com/SCnTZ7B.png'} altCertificate={'certificado javascript'} nameModal={'modal2'} /> */}
           
+        </div>
+        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
+          <div className="flex flex-col sm:flex-row sm:justify-center items-center mb-3 w-6/12">
+            <p className=" text-white sm:mr-5 text-2xl text-center">
+              WORDPRESS:
+            </p>
+            <ul className=" text-white">
+              <li>Creación de plugins y temas</li>
+              <li>Mantenimiento</li>
+              <li>Actualizaciones</li>
+            </ul>
+          </div>
         </div>
         <div className=" flex sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2 w-full">
           <p className=" text-white sm:mr-5 text-2xl text-center ">

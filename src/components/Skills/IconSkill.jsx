@@ -1,9 +1,9 @@
-import anime from 'animejs/lib/anime.es.js';
+/* import anime from 'animejs/lib/anime.es.js'; */
 import { useEffect } from 'react';
 
 const IconSkill = ({logoURL, nameLogo, widthLogo}) => {
 
-    const skillLogo = {
+    /* const skillLogo = {
       targets: ".skillLogo",
       translateY: -30,
       direction: "alternate",
@@ -14,10 +14,10 @@ const IconSkill = ({logoURL, nameLogo, widthLogo}) => {
     useEffect(() => {
       anime(skillLogo)
       
-    }, [])
+    }, []) */
   return (
     <>
-      <img className={` ${widthLogo} m-2 skillLogo`} src={logoURL} alt={nameLogo} />
+      <img className={` ${widthLogo} m-2`} src={logoURL} alt={nameLogo} />
     </>
   )
 }
