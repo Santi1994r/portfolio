@@ -145,7 +145,7 @@ const Skills = () => {
           Control de versiones
         </h6>
         <div
-          className={`flex sm:flex-row h-56 sm:h-auto w-auto overflow-x-auto overscroll-x-contain p-5 items-center sm:justify-center sm:items-end sm:flex-wrap  sm:overflow-hidden mx-4`}
+          className={`flex sm:flex-row h-56 sm:h-auto w-auto overflow-x-auto overscroll-x-contain p-5 items-center sm:justify-center sm:items-end sm:flex-wrap  sm:overflow-hidden m-auto`}
         >
           
           {handleFilter('control').map((iconProp, index) => (
@@ -162,7 +162,7 @@ const Skills = () => {
           CMS
         </h6>
         <div
-          className={`flex sm:flex-row h-56 sm:h-auto w-auto overflow-x-auto overscroll-x-contain p-5 items-center sm:justify-center sm:items-end sm:flex-wrap  sm:overflow-hidden mx-4`}
+          className={`flex sm:flex-row h-56 sm:h-auto w-auto overflow-x-auto overscroll-x-contain p-5 items-center sm:justify-center sm:items-end sm:flex-wrap  sm:overflow-hidden m-auto`}
         >
           
           {handleFilter('cms').map((iconProp, index) => (
