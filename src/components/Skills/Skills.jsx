@@ -89,7 +89,7 @@ const Skills = () => {
         Habilidades
       </h5>
 
-      <div className=" bg-indigo-900 rounded-xl flex flex-col w-11/12 sm:w-8/12">
+      <div className=" bg-light-blue rounded-xl flex flex-col w-11/12 sm:w-8/12">
         <h6 className=" text-white text-center mt-10 text-3xl font-medium">
           Desarrollo Web
         </h6>

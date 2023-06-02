@@ -54,7 +54,7 @@ const Contact = () => {
   });
 
   return (
-    <div id="Contact" className=" bg-black">
+    <div id="Contact" className=" bg-blue-dark">
       <h6 className="text-center text-white pt-20 pb-10 text-4xl font-bold">
         Contáctame
       </h6>
@@ -104,7 +104,7 @@ const Contact = () => {
             onClick={sendEmail}
             id="button"
             type="submit"
-            className="text-white bg-indigo-800 p-3 rounded-lg cursor-pointer"
+            className="text-white bg-light-blue hover:bg-blue-dark-hover p-3 rounded-lg cursor-pointer"
             value="Enviar e-mail"
           />
 

@@ -8,8 +8,8 @@ const Training = () => {
       <h4 className="text-white text-center mt-28 mb-5 text-4xl font-bold">
         Formación
       </h4>
-      <div className=" bg-indigo-900 rounded-xl w-full">
-        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
+      <div className=" bg-light-blue rounded-xl w-full">
+        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:rounded-xl p-5 h-1/2">
           <div className="flex flex-col sm:flex-row sm:justify-center items-center mb-3 w-6/12">
             <p className=" text-white sm:mr-5 text-2xl text-center">
               DESARROLLO WEB:
@@ -31,7 +31,7 @@ const Training = () => {
           />
           </div>
         </div>
-        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
+        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:rounded-xl p-5 h-1/2">
           <div className="flex flex-col sm:flex-row sm:justify-center items-center mb-3 w-6/12">
             <p className=" text-white sm:mr-5 text-2xl text-center">
               JAVASCRIPT:{" "}
@@ -47,7 +47,7 @@ const Training = () => {
           {/* <Modal urlCertificate={'https://i.imgur.com/SCnTZ7B.png'} altCertificate={'certificado javascript'} nameModal={'modal2'} /> */}
           
         </div>
-        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2">
+        <div className=" flex flex-col sm:flex-row items-center justify-evenly hover:rounded-xl p-5 h-1/2">
           <div className="flex flex-col sm:flex-row sm:justify-center items-center mb-3 w-6/12">
             <p className=" text-white sm:mr-5 text-2xl text-center">
               WORDPRESS:
@@ -59,7 +59,7 @@ const Training = () => {
             </ul>
           </div>
         </div>
-        <div className=" flex sm:flex-row items-center justify-center hover:bg-indigo-500 hover:rounded-xl p-5 h-1/2 w-full">
+        <div className=" flex sm:flex-row items-center justify-center hover:rounded-xl p-5 h-1/2 w-full">
           <p className=" text-white sm:mr-5 text-2xl text-center ">
             REACT:
           </p>

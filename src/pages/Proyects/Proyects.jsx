@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import VideoProject from "../../components/VideoProject/VideoProject";
 
 const Proyects = () => {
   const [numberText, setNumberText] = useState(true);
@@ -233,7 +232,7 @@ const Proyects = () => {
 
   /* handleScroll(collaborativeProjects[1].info) */
   return (
-    <section id="Proyects" className=" bg-black">
+    <section id="Proyects" className=" bg-blue-dark">
       <h5 className=" text-center text-white pt-20 pb-10 text-4xl font-bold">
         Experiencia
       </h5>
@@ -241,7 +240,7 @@ const Proyects = () => {
         {proyects.map((proyect) => (
           <div
             key={proyect.image}
-            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-5/12 rounded-xl"
+            className="flex flex-col items-center bg-light-blue w-11/12 sm:w-5/12 rounded-xl"
           >
             <h6 className="text-center text-white p-2 text-4xl">
               {proyect.name}
@@ -282,7 +281,7 @@ const Proyects = () => {
             </div>
             <div className=" my-3 flex p-3">
               <Link to={proyect.urlCode} target="_blank">
-                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 sm:w-40">
+                <button className="rounded bg-blue-dark-hover px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 sm:w-40">
                   <img
                     className=" w-10 sm:mr-2"
                     src="https://i.imgur.com/FuPrLd7.png"
@@ -292,7 +291,7 @@ const Proyects = () => {
                 </button>
               </Link>
               <Link to={proyect.deployment} target="_blank">
-                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
+                <button className="rounded bg-blue-dark-hover px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
                   <img
                     className=" w-10 rounded-xl sm:mr-2"
                     src="https://i.imgur.com/vKTfk5I.jpg"
@@ -313,7 +312,7 @@ const Proyects = () => {
         {collaborativeProjects.map((proyect) => (
           <div
             key={proyect.image}
-            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-5/12 rounded-xl"
+            className="flex flex-col items-center bg-light-blue w-11/12 sm:w-5/12 rounded-xl"
           >
             <h6 className="text-center text-white p-2 text-4xl">
               {proyect.name}
@@ -342,7 +341,7 @@ const Proyects = () => {
             </div>
             <div className=" my-3 flex p-3">
               <Link to={proyect.urlCode} target="_blank">
-                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 sm:w-40">
+                <button className="rounded bg-blue-dark-hover px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 mr-3 flex items-center h-12 sm:w-40">
                   <img
                     className=" w-10 sm:mr-2"
                     src="https://i.imgur.com/FuPrLd7.png"
@@ -352,7 +351,7 @@ const Proyects = () => {
                 </button>
               </Link>
               <Link to={proyect.deployment} target="_blank">
-                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
+                <button className="rounded bg-blue-dark-hover px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
                   <img
                     className=" w-10 rounded-xl sm:mr-2"
                     src="https://i.imgur.com/vKTfk5I.jpg"
@@ -371,7 +370,7 @@ const Proyects = () => {
         {proyectsWordpress.map((proyect) => (
           <div
             key={proyect.image}
-            className="flex flex-col items-center bg-indigo-900 w-11/12 sm:w-5/12 rounded-xl"
+            className="flex flex-col items-center bg-light-blue w-11/12 sm:w-5/12 rounded-xl"
           >
             <h6 className="text-center text-white p-2 text-4xl">
               {proyect.name}
@@ -388,18 +387,9 @@ const Proyects = () => {
               src={proyect.image}
               alt="santiago ruiz"
             />
-           {/*  <VideoProject src='https://youtu.be/yXMqRNmNMp0' /> */}
-            {/* <iframe
-      width="400"
-      height="315"
-      src='https://youtu.be/yXMqRNmNMp0'
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    ></iframe> */}
             <div className=" my-3 flex p-3">
               <Link to={proyect.deployment} target="_blank">
-                <button className="rounded bg-indigo-600 px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
+                <button className="rounded bg-blue-dark-hover px-5 sm:px-8 sm:py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 flex items-center h-12 sm:w-40">
                   <img
                     className=" w-10 rounded-xl sm:mr-2"
                     src="https://i.imgur.com/vKTfk5I.jpg"

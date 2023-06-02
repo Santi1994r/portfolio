@@ -8,7 +8,7 @@ const NavbarSR = () => {
   };
 
   return (
-    <header aria-label="Site Header" className="bg-indigo-900 lg:hidden">
+    <header aria-label="Site Header" className="bg-blue-dark lg:hidden">
       <div className="mx-auto flex h-auto max-w-screen-xl items-center p-3 sm:px-6 lg:px-8">
         <img
           className="w-20 rounded-3xl"
@@ -63,7 +63,7 @@ const NavbarSR = () => {
             {
               <button
                 onClick={openNavMobile}
-                className="block rounded bg-indigo-500 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+                className="block rounded bg-blue-dark-hover p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
               >
                 <span className="sr-only">Toggle menu</span>
                 <svg
@@ -86,7 +86,7 @@ const NavbarSR = () => {
         </div>
       </div>
 
-      <div className={`${menuMobile ? 'fixed bg-indigo-900 top-0 right-0 left-0 bottom-0' : 'hidden'}`}>
+      <div className={`${menuMobile ? 'fixed bg-blue-dark-hover top-0 right-0 left-0 bottom-0' : 'hidden'}`}>
         <div className="flex justify-end">
           <p onClick={openNavMobile} className="text-white h-0 pr-5 pt-5 text-2xl">X</p>
         </div>
@@ -96,7 +96,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="About"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
+                  className="text-gray-700 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   Sobre Mí
                 </Link>
@@ -106,7 +106,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="Proyects"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
+                  className="text-gray-700 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   Experiencia
                 </Link>
@@ -116,7 +116,7 @@ const NavbarSR = () => {
                   onClick={openNavMobile}
                   to="Contact"
                   smooth={true}
-                  className="text-gray-500 transition hover:text-white cursor-pointer font-bold text-4xl"
+                  className="text-gray-700 transition hover:text-white cursor-pointer font-bold text-4xl"
                 >
                   Contacto
                 </Link>

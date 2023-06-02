@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black">
+    <footer className=" bg-light-blue">
       <h6 className=" text-center text-white font-bold pt-10 pb-10 text-4xl">
         Seguíme en mis redes
       </h6>
@@ -23,7 +23,7 @@ const Footer = () => {
         <Link
           to="index"
           smooth={true}>
-          <FaArrowAltCircleUp className=" text-white text-5xl mr-5 mb-5 hover:text-sky-600 hover:cursor-pointer" />
+          <FaArrowAltCircleUp className=" text-white text-5xl hover:text-sky-600 mr-5 mb-5 hover:cursor-pointer" />
         </Link>
       </div>
     </footer>
