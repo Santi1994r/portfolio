@@ -22,7 +22,7 @@ const Contact = () => {
     btnSubmit.current.value = "Enviando";
     emailjs
       .send(
-        "service_08damxu",
+        "service_db9pnc5",
         "template_omljmxt",
         {
           from_name: formRef.current.from_name.value,

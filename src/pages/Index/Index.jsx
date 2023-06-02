@@ -16,7 +16,7 @@ const Index = () => {
       : index === 3 && setSantiago(!Santiago);
   };
   return (
-    <section
+    <section id="index"
       className="sm:relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] bg-cover bg-center bg-no-repeat"
     >
     <div className="sm:absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
