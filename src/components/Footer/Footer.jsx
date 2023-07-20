@@ -1,5 +1,6 @@
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -17,7 +18,11 @@ const Footer = () => {
         </a>
         <a href="https://github.com/Santi1994r" target="_blanck">
         <BsGithub className=" text-white text-5xl hover:text-sky-600 hover:cursor-pointer" />
-        </a>        
+        </a> 
+        <div className="flex items-center gap-4">
+          <SiGmail className=" text-5xl text-red-500" />       
+          <p className=" text-white">santiagoruiz9416@gmail.com</p>
+        </div>
       </div>
       <div className="flex justify-end">
         <Link
