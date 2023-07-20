@@ -16,9 +16,17 @@ const About = () => {
           Sobre mí
         </h3>
         <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
-          Mi objetivo es poder conseguir un trabajo en el que pueda demostrar todo mi conocimiento y en el que pueda seguir formandome y creciendo como desarrollador. Me gustan los desafíos y el trabajo en equipo. Hago uso de buenas prácticas y soy muy responsable, tengo experiencia con la metodología SCRUM y git flow. 
+          Desarrollador front-end con 2 años de experiencia en la creación de
+          interfaces web atractivas y funcionales. Con muy buen conocimiento en
+          HTML, CSS, JAVASCRIPT, REACT, TAILWIND, BOOTSTRAP, GIT, GITHUB, FIGMA,
+          Metodologías ágiles (SCRUM). Mi objetivo es utilizar todas mis
+          habilidades técnicas para realizar soluciones y poder mejorar la
+          experiencia de usuario. Actualmente trabajando en una Startup sin
+          fines de lucro, realizando proyectos medianos y grandes poniendo en
+          práctica todo lo aprendido y de acuerdo a cada proyecto tuve que
+          aprender diferentes tecnologías, trabajamos mediante la metodología
+          SCRUM con sprints semanales.
         </p>
-        <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">Actualmente me encuentro en la realización de diversos proyectos y en algunos casos para reforzar mis habilidades blandas.</p>
         <Link
           to="https://drive.google.com/file/d/1lQIiDrhulcefPkoesrTuit5hpPRfZMsI/view?usp=sharing"
           target="_blank"

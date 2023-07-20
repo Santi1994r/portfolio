@@ -70,6 +70,9 @@ const Index = () => {
           </Link>
         </div>
       </div>
+      <section>
+        
+      </section>
     </section>
   );
 };
