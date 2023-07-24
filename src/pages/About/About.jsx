@@ -28,7 +28,7 @@ const About = () => {
           SCRUM con sprints semanales.
         </p>
         <Link
-          to="https://drive.google.com/file/d/1lQIiDrhulcefPkoesrTuit5hpPRfZMsI/view?usp=sharing"
+          to="https://drive.google.com/file/d/1ncMCTwN1_dU7ikUTAKpwK8irfzNivjKT/view?usp=drive_link"
           target="_blank"
         >
           <button className=" bg-light-blue p-3 text-white font-bold rounded-lg hover:bg-blue-dark-hover hover:text-white mt-8">
