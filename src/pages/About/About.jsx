@@ -18,21 +18,20 @@ const About = () => {
         <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
           Desarrollador front-end con 2 años de experiencia en la creación de
           interfaces web atractivas y funcionales. Con muy buen conocimiento en
-          HTML, CSS, JAVASCRIPT, REACT, TAILWIND, BOOTSTRAP, GIT, GITHUB, FIGMA,
+          HTML, CSS, JAVASCRIPT, REACT, TAILWIND, BOOTSTRAP, GIT, GITHUB, FIGMA, WORDPRESS,
           Metodologías ágiles (SCRUM). Mi objetivo es utilizar todas mis
           habilidades técnicas para realizar soluciones y poder mejorar la
-          experiencia de usuario. Actualmente trabajando en una Startup sin
-          fines de lucro, realizando proyectos medianos y grandes poniendo en
-          práctica todo lo aprendido y de acuerdo a cada proyecto tuve que
-          aprender diferentes tecnologías, trabajamos mediante la metodología
-          SCRUM con sprints semanales.
+          experiencia de usuario. Actualmente me encuentro trabajando en una startup realizando proyectos innovadores y aprendiendo nuevas tecnologías.
+        </p>
+        <p className="text-white text-xl xl:text-2xl text-center w-11/12 sm:w-8/12">
+        Soy una persona motivada y proactiva, con muy buena comunicación y capacidad para trabajar en equipo. Cuento con experiencia previa en el rubro comercial y como vendedor de productos.
         </p>
         <Link
-          to="https://drive.google.com/file/d/1ncMCTwN1_dU7ikUTAKpwK8irfzNivjKT/view?usp=drive_link"
+          to="https://drive.google.com/file/d/1qn-Y_T53IbTIl_JpFxHjzsDi379e2tWH/view?usp=sharing"
           target="_blank"
         >
           <button className=" bg-light-blue p-3 text-white font-bold rounded-lg hover:bg-blue-dark-hover hover:text-white mt-8">
-            Descargar CV
+            Ver CV
           </button>
         </Link>
       </section>
