@@ -17,10 +17,10 @@ const Index = () => {
   };
   return (
     <section id="index"
-      className="sm:relative bg-[url(https://i.imgur.com/FoHMJKL.jpg)] bg-cover bg-center bg-no-repeat"
+      className="sm:relative bg-[url(https://imgur.com/8bVtXbv)] bg-cover bg-center bg-no-repeat"
     >
     <div className="sm:absolute inset-0 bg-gray/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-gray-800/25"></div>
-
+    
       <div className="sm:relative flex flex-col items-start justify-start sm:justify-center pt-2 pb-10 h-screen mx-auto max-w-screen-xl px-4 py-32 sm:px-6  lg:h-screen lg:px-8">
         <div className="max-w-xl text-center sm:text-left mb-10">
           <Link 
