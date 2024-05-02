@@ -27,7 +27,7 @@ const About = () => {
         Soy una persona motivada y proactiva, con muy buena comunicación y capacidad para trabajar en equipo. Cuento con experiencia previa en el rubro comercial y como vendedor de productos.
         </p>
         <Link
-          to="https://drive.google.com/file/d/1K2CUesrseZ86Xj54wzHUADrhECGpGOQ3/view?usp=sharing"
+          to="https://drive.google.com/file/d/10qSbkXjRUKo9EkQzJ7QaBlPcSVS8UOLi/view?usp=drive_link"
           target="_blank"
         >
           <button className=" bg-light-blue p-3 text-white font-bold rounded-lg hover:bg-blue-dark-hover hover:text-white mt-8">
