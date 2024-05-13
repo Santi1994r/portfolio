@@ -11,7 +11,7 @@ const Footer = () => {
       <h6 className=" text-center text-white font-bold pt-10 pb-10 text-4xl">
         Seguíme en mis redes
       </h6>
-      <div className=" flex justify-center gap-x-10 pb-5">
+      <div className=" flex justify-center flex-col items-center md md:flex-row gap-y-5 gap-x-10 pb-5">
         <a href="https://www.linkedin.com/in/santiago-ruiz-developer/" target="_blanck">
           <AiFillLinkedin
             className=" text-white text-5xl hover:text-sky-600 hover:cursor-pointer"/>
